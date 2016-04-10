@@ -1,4 +1,5 @@
 #+SETUPFILE: ./theme-readtheorg.setup
+#+AUTHOR: M Charles / C Knight / A Pritchard
 * Welcome to Computer Science at Warblington
 ** Year 7
 *** Micro-bit

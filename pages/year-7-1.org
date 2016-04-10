@@ -1,9 +1,18 @@
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
-#+Author: M Charles / C Knight / A Pritchard
+#+Author: M.Charles / C.Knight / A.Pritchard
 #+Title: An Introduction to Computer Science
-#+Email: m.charles@warblington.hants.sch.uk
+#+Email: @warblington.hants.sch.uk
 
 * Your starter:
 In this lesson, you'll need to spot the difference between your code and the code on screen - 
-Go to http://www.spotthedifference.com and do two puzzles. 
+Go to http://www.spotthedifference.com and do two puzzles to practice this important skill. 
+* Microbit!
+The BBC has kindly provided us with microbits for you to use...
+- at the end of term, you can take them home!
+[[../img/microbit.jpg]]
+* What is it?
+#+REVEAL_HTML: <iframe width="640" height="360" src="https://www.youtube.com/embed/Wuza5WXiMkc" frameborder="0" allowfullscreen></iframe>
+* Getting Started
+- Go to http://warb.kaark.net and click 'Year 7' to get started!
+- Instructions will appear on the screen for you to write your first program!
