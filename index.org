@@ -4,8 +4,10 @@
 ** Year 7
 *** Micro-bit
 *** Week 1
-**** Lesson Presentation [[pages/year-7-1.html][Year 7 Lesson 1 Presentation]]
-**** Lesson Worksheet [[./7l1.html][Year 7 Lesson 1 Worksheet]]
+**** Lesson Presentation 
+[[./pages/year-7-1.html][Year 7 Lesson 1 Presentation]]
+**** Lesson Worksheet
+[[./7l1.html][Year 7 Lesson 1 Worksheet]]
 **** Resources
 
 
