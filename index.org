@@ -1,5 +1,13 @@
 #+SETUPFILE: ./theme-readtheorg.setup
 * Welcome to Computer Science at Warblington
 ** Year 7
+*** Micro-bit
+*** Week 1
+**** Lesson Presentation
+**** Lesson Worksheet
+**** Resources
+
+
+
 ** Year 8
 ** Downloads

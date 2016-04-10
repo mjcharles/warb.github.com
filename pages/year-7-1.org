@@ -1,0 +1,9 @@
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+Author: M Charles / C Knight / A Pritchard
+#+Title: An Introduction to Computer Science
+#+Email: m.charles@warblington.hants.sch.uk
+
+* Your starter:
+In this lesson, you'll need to spot the difference between your code and the code on screen - 
+Go to http://www.spotthedifference.com and do two puzzles. 
