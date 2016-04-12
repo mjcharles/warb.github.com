@@ -1,4 +1,4 @@
-#+SETUPFILE: theme-bigblow.setup
+#+SETUPFILE: ./theme-bigblow.setup
 * What do I need to have done by the end of this lesson?
 ** TODO Organised your folders - 
 *** Word
