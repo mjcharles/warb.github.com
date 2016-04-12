@@ -1,0 +1,16 @@
+#+SETUPFILE: theme-bigblow.setup
+* What do I need to have done by the end of this lesson?
+** TODO Organised your folders - 
+*** Word
+*** Excel
+*** PowerPoint
+*** Programming
+*** Misc
+** TODO Put a screenshot of your folders into your ICT Portfolio
+*** TODO Press 'Print Screen' on your keyboard to take a screenshot and copy it to the clipboard
+*** TODO Paste your screenshot into slide 9 of your #ICT Portfolio
+*** TODO Crop the image (under 'Format') to show only your folders.
+** TODO Answer these questions on a PowerPoint slide:
+*** 1. Why should you keep neat files and folders?
+*** 2. What could happen if your files and folders are not neat and do not have suitable names?
+*** 3. What is a possible reason why people struggle with keeping neat files and folders?
