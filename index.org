@@ -14,3 +14,7 @@
 
 ** Year 8
 ** Downloads
+** Year 8
+** Year 9
+*** Resources
+[[https://www.newscientist.com/article/visual-turing-test/][The Turing Test]]
