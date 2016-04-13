@@ -17,13 +17,13 @@
 - Scroll down slightly, and click the link under the "Python" heading that says, "New project".
 - Your screen should look something like this:
 [[./img/python_ide.png]]
-- Change the line 7 (they're numbered along the left-hand edge) to gree you by name rather than writing "Hello World".
+- Change the line 6 (they're numbered along the left-hand edge) to greet you by name rather than writing "Hello World".
 - We can now put this program to our Micro:bit and see it work in the real World. Follow these instructions carefully:
   1. Gently plug the small end of the USB cable you've been given by your teacher into the socket on the Micro:bit. *NOTE:* The cable must go in the right way up; it does not need to be forced, otherwise it'll break.
   2. Plug the larger end of the USB cable into your PC. Again, this will only fit one way round. 
   3. The Micro:bit will boot up, and a short demo sequence will start.
-  4. Click the *Download* button in the top-left hand corner of the browser window. After a few moments, you'll see a dialogue box appear. Click *Save File* and it will disappear. 
-  5. Open *My Computer* or a file explorer window, and navigate to your Downloads folder...
+  4. Click the *Download* button in the top-left hand corner of the browser window. After a few moments, you'll see a dialogue box appear. Drop down on the 'Save' button and click save as. Save the file in your ICT folder. 
+  5. Open *My Computer* or a file explorer window, and navigate to your ICT folder...
 
   6. You'll see an enthusiastically named file with *.hex* written at the end of it in this folder (E.g. /awesome program.hex/). This is your program, ready to go onto the Micro:bit. Right-click on this file and choose 'cut'.
   7. Look down the different drive-letters in your explorer window, and find the one labelled *MICROBIT*. Click on this to open it.
