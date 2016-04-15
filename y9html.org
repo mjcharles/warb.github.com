@@ -1,0 +1,29 @@
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+Author: M. Charles / C. Knight / A. Pritchard
+#+Title: Creating Online
+#+Email: €warblington.hants.sch.uk
+
+* Your starter:
+- Go to
+www.spotthedifference.com
+
+* Objectives - 
+- We are learning:
+How websites and templates are built by hand.
+- You will be able to:
+Change the code of a website to read whatever you want it to.
+
+* Why?
+- It is easy to write pages using Dreamweaver / Serif...
+Why would we want to create or modify them by hand?
+* Let's try it
+- Bring up the school website;
+- Press 'F12' on your keyboard;
+- Click the element select button [[./elementselect.png]]
+- Click on the text you want to modify
+- Right click and choose 'Edit as html'
+* Let's create our own
+- Go to scratchpad.io
+-Modify the text
+- Modify the background image
