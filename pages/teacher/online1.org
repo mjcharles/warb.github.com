@@ -1,6 +1,6 @@
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
-#+Author: M. Charles / C. Knight / A. Pritchard
+#+Author: 
 #+Title: Creating Online
 #+Email: @warblington.hants.sch.uk
 
