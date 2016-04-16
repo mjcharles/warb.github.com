@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil
 #+Author: M. Charles / C. Knight / A. Pritchard
 #+Title: Creating Online
-#+Email: €warblington.hants.sch.uk
+#+Email: @warblington.hants.sch.uk
 
 * Your starter:
 - Go to
@@ -18,12 +18,16 @@ Change the code of a website to read whatever you want it to.
 - It is easy to write pages using Dreamweaver / Serif...
 Why would we want to create or modify them by hand?
 * Let's try it
-- Bring up the school website;
+- Bring up the BBC News Website http://bbc.co.uk/news;
 - Press 'F12' on your keyboard;
-- Click the element select button [[./elementselect.png]]
+- Click the element select button [[../img/elementselect.png]]
 - Click on the text you want to modify
 - Right click and choose 'Edit as html'
-* Let's create our own
+[Hint: You can also right click and hit 'inspect element]
+* Challenge!
 - Go to scratchpad.io
 -Modify the text
 - Modify the background image
+[Hint: You'll need to keep the brackets () around the url for this to work]
+
+
