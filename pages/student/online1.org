@@ -1,0 +1,62 @@
+#+SETUPFILE: ../../theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+Author: M. Charles / C. Knight / A. Pritchard
+#+Title: Creating Online
+#+Email: @warblington.hants.sch.uk
+
+* Your starter:
+- Go to
+www.spotthedifference.com
+
+* Objectives - 
+- We are learning:
+How websites and templates are built by hand.
+- You will be able to:
+Change the text of a website to read whatever you want it to.
+
+* Why?
+- Why is it a good idea to have the skills to create pages on the internet?
+#+REVEAL_HTML: <img src="../../img/social.png" alt="social" width="100"> 
+* This lesson
+- We'll modify part of an existing site;
+- We'll create a message and background of our own.
+* Get this lesson on your own screen:
+
+* Today's Vocabulary
+- html
+- css
+- tag
+- developer
+* Show me! 
+#+REVEAL_HTML: <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/Qe44-HbD7TM&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/Qe44-HbD7TM&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+* Let's try it
+- Bring up the Warblington School website;
+- Right click on the text you want to change;
+- Click 'Inspect Element';
+- Double click on the text you want to modify.
+* Congratulations
+- You've edited html.
+- Extension activity: put a different image on the site
+#+BEGIN_QUOTE
+Hint: You must use an online image so copy the address from Google Images > View Image
+and you'll need to keep the 'href' tag and the " marks as you edit.
+#+END_QUOTE
+* Question
+- Why might you need to choose an image with a small file size when putting an image into a webpage?
+* CSS
+- CSS stands for 'Cascading Style Sheets'
+- These are a modern way of controlling the layout and style of your pages
+- CSS commands can be in a file by themselves, or inside an html file.
+* What does it look like?
+- The next file you edit will use CSS to load a background image.
+* Independent task...
+A challenge for you.
+- Go to http://scratchpad.io
+- Modify the text
+- Modify the background image
+#+BEGIN_QUOTE
+[Hint: You'll need to keep the brackets () around the url for this to work]
+#+END_QUOTE
+* How did we do this lesson?
+Go to http://m.socrative.com and enter the room code your teacher gives you.

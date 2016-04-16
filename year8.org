@@ -1,0 +1,7 @@
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+Author: M.Charles / C.Knight / A.Pritchard
+#+Title: An Introduction to Computer Science
+#+Email: @warblington.hants.sch.uk
+
+* How many computers do you think you have in your house?
