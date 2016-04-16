@@ -22,7 +22,7 @@ Change the text of a website to read whatever you want it to.
 - We'll modify part of an existing site;
 - We'll create a message and background of our own.
 * Get this lesson on your own screen:
-
+http://tinyurl.com/h77scbb
 * Today's Vocabulary
 - html
 - css
