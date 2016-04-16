@@ -1,306 +1,238 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!-- 2016-04-16 Sat 16:27 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
 <title>Creating Online</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="M. Charles / C. Knight / A. Pritchard" />
+<meta name="author" content="(M. Charles / C. Knight / A. Pritchard)"/>
 <style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
+.underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
-<script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Creating Online</h1>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>Creating Online</h1>
+<h2>M. Charles / C. Knight / A. Pritchard</h2>
+<h2><a href="mailto:@warblington.hants.sch.uk">@warblington.hants.sch.uk</a></h2>
+<h2></h2>
+</section>
 
-<div id="outline-container-orgheadline1" class="outline-2">
+<section>
+<section id="slide-orgheadline1">
 <h2 id="orgheadline1">Your starter:</h2>
-<div class="outline-text-2" id="text-orgheadline1">
-<ul class="org-ul">
+<ul>
 <li>Go to</li>
+
 </ul>
 <p>
 www.spotthedifference.com
 </p>
-</div>
-</div>
 
-<div id="outline-container-orgheadline2" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline2">
 <h2 id="orgheadline2">Objectives -</h2>
-<div class="outline-text-2" id="text-orgheadline2">
-<ul class="org-ul">
+<ul>
 <li>We are learning:</li>
+
 </ul>
 <p>
 How websites and templates are built by hand.
 </p>
-<ul class="org-ul">
+<ul>
 <li>You will be able to:</li>
+
 </ul>
 <p>
 Change the text of a website to read whatever you want it to.
 </p>
-</div>
-</div>
 
-<div id="outline-container-orgheadline3" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline3">
 <h2 id="orgheadline3">Why?</h2>
-<div class="outline-text-2" id="text-orgheadline3">
-<ul class="org-ul">
+<ul>
 <li>Why is it a good idea to have the skills to create pages on the internet?</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline4" class="outline-2">
+<img src="../../img/social.png" alt="social" width="100">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline4">
 <h2 id="orgheadline4">This lesson</h2>
-<div class="outline-text-2" id="text-orgheadline4">
-<ul class="org-ul">
+<ul>
 <li>We'll modify part of an existing site;</li>
 <li>We'll create a message and background of our own.</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5">Get this lesson on your own screen:</h2>
-</div>
 
-<div id="outline-container-orgheadline6" class="outline-2">
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5">Get this lesson on your own screen:</h2>
+<p>
+<a href="http://tinyurl.com/h77scbb">http://tinyurl.com/h77scbb</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline6">
 <h2 id="orgheadline6">Today's Vocabulary</h2>
-<div class="outline-text-2" id="text-orgheadline6">
-<ul class="org-ul">
+<ul>
 <li>html</li>
 <li>css</li>
 <li>tag</li>
 <li>developer</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline7" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
 <h2 id="orgheadline7">Show me!</h2>
-<div class="outline-text-2" id="text-orgheadline7">
-</div>
-</div>
-<div id="outline-container-orgheadline8" class="outline-2">
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/Qe44-HbD7TM&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/Qe44-HbD7TM&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+<p>
+<a href="http://www.youtube.com/v/Qe44-HbD7TM&amp;hl=en&amp;fs=1">http://www.youtube.com/v/Qe44-HbD7TM&amp;hl=en&amp;fs=1</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline8">
 <h2 id="orgheadline8">Let's try it</h2>
-<div class="outline-text-2" id="text-orgheadline8">
-<ul class="org-ul">
+<ul>
 <li>Bring up the Warblington School website;</li>
 <li>Right click on the text you want to change;</li>
 <li>Click 'Inspect Element';</li>
 <li>Double click on the text you want to modify.</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline9" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline9">
 <h2 id="orgheadline9">Congratulations</h2>
-<div class="outline-text-2" id="text-orgheadline9">
-<ul class="org-ul">
+<ul>
 <li>You've edited html.</li>
 <li>Extension activity: put a different image on the site</li>
+
 </ul>
-<blockquote>
+<blockquote nil>
 <p>
 Hint: You must use an online image so copy the address from Google Images &gt; View Image
 and you'll need to keep the 'href' tag and the " marks as you edit.
 </p>
 </blockquote>
-</div>
-</div>
-<div id="outline-container-orgheadline10" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline10">
 <h2 id="orgheadline10">Question</h2>
-<div class="outline-text-2" id="text-orgheadline10">
-<ul class="org-ul">
+<ul>
 <li>Why might you need to choose an image with a small file size when putting an image into a webpage?</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline11" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline11">
 <h2 id="orgheadline11">CSS</h2>
-<div class="outline-text-2" id="text-orgheadline11">
-<ul class="org-ul">
+<ul>
 <li>CSS stands for 'Cascading Style Sheets'</li>
 <li>These are a modern way of controlling the layout and style of your pages</li>
 <li>CSS commands can be in a file by themselves, or inside an html file.</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline12" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline12">
 <h2 id="orgheadline12">What does it look like?</h2>
-<div class="outline-text-2" id="text-orgheadline12">
-<ul class="org-ul">
+<ul>
 <li>The next file you edit will use CSS to load a background image.</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline13" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline13">
 <h2 id="orgheadline13">Independent task&#x2026;</h2>
-<div class="outline-text-2" id="text-orgheadline13">
 <p>
 A challenge for you.
 </p>
-<ul class="org-ul">
+<ul>
 <li>Go to <a href="http://scratchpad.io/">http://scratchpad.io/</a></li>
 <li>Modify the text</li>
 <li>Modify the background image</li>
+
 </ul>
-<blockquote>
+<blockquote nil>
 <p>
 [Hint: You'll need to keep the brackets () around the url for this to work]
 </p>
 </blockquote>
-</div>
-</div>
-<div id="outline-container-orgheadline14" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline14">
 <h2 id="orgheadline14">How did we do this lesson?</h2>
-<div class="outline-text-2" id="text-orgheadline14">
 <p>
 Go to <a href="http://m.socrative.com/">http://m.socrative.com/</a> and enter the room code your teacher gives you.
 </p>
+</section>
+</section>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
-<p class="author">Author: M. Charles / C. Knight / A. Pritchard</p>
-<p class="date">Created: 2016-04-16 Sat 16:27</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
-</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
 </body>
 </html>
