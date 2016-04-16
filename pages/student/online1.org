@@ -1,4 +1,4 @@
-#+SETUPFILE: ../../theme-readtheorg.setup
+#+SETUPFILE: ../../theme-bigblow.setup
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
 #+Author: M. Charles / C. Knight / A. Pritchard
@@ -22,7 +22,7 @@ Change the text of a website to read whatever you want it to.
 - We'll modify part of an existing site;
 - We'll create a message and background of our own.
 * Get this lesson on your own screen:
-http://tinyurl.com/h77scbb
+[[http://tinyurl.com/h77scbb][Link to the Lesson]]
 * Today's Vocabulary
 - html
 - css
@@ -30,7 +30,7 @@ http://tinyurl.com/h77scbb
 - developer
 * Show me! 
 #+REVEAL_HTML: <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/Qe44-HbD7TM&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/Qe44-HbD7TM&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
-[[http://www.youtube.com/v/Qe44-HbD7TM&hl=en&fs=1]]
+[[http://www.youtube.com/v/Qe44-HbD7TM&hl=en&fs=1][Editing Demo]]
 * Let's try it
 - Bring up the Warblington School website;
 - Right click on the text you want to change;
