@@ -1,3 +1,4 @@
+#+SETUPFILE: ../../theme-readtheorg.setup
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
 #+Author:
