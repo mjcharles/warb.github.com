@@ -1,0 +1,34 @@
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+Author:
+#+Title: Micro:Bit
+#+Email:
+
+* Your starter: 
+http://www.spotthedifference.com 
+* Objectives
+- We are learning
+To care for the micro:bit, and explore it's hardware
+- You will be able to
+Write your first lines of code to run on the micro:bit next week.
+* Micro:bit!
+The BBC has kindly provided us with microbits for you to use...
+- at the end of term, you can take them home!
+[[../img/microbit.jpg]]
+* What is it?
+#+REVEAL_HTML: <iframe width="640" height="360" src="https://www.youtube.com/embed/Wuza5WXiMkc" frameborder="0" allowfullscreen></iframe>
+* Words to look up
+- Emulator
+- Code
+* Getting Started
+- Your teacher will show you how to plug the battery pack into the micro:bit
+- Please treat it with care and return it in it's anti-static bag after the lesson
+- You'll go through a demo of it's hardware features, including a short snake-type game.
+-Next week, we'll connect them to the computers!
+* Let's write some code
+- Go to http://www.microbit.co.uk
+- Click 'Create' and then 'New Project' under the Block Code Editor
+- Click 'basic' and drag in a 'show leds' component
+- Hit 'convert' (the light bulb) and watch the show.
+* Show me!
+#+REVEAL_HTML: <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/KSICvQ_WMvA&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/KSICvQ_WMvA&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
