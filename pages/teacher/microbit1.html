@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Micro:Bit</title>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>Micro:Bit</h1>
+<h2></h2>
+<h2><a href="mailto:"></a></h2>
+<h2></h2>
+</section>
+
+<section>
+<section id="slide-orgheadline1">
+<h2 id="orgheadline1">Your starter:</h2>
+<p>
+<a href="http://www.spotthedifference.com/">http://www.spotthedifference.com/</a> 
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline2">
+<h2 id="orgheadline2">Objectives</h2>
+<ul>
+<li>We are learning</li>
+
+</ul>
+<p>
+To care for the micro:bit, and explore it's hardware
+</p>
+<ul>
+<li>You will be able to</li>
+
+</ul>
+<p>
+Write your first lines of code to run on the micro:bit next week.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline3">
+<h2 id="orgheadline3">Micro:bit!</h2>
+<p>
+The BBC has kindly provided us with microbits for you to use&#x2026;
+</p>
+<ul>
+<li>at the end of term, you can take them home!</li>
+
+</ul>
+
+<div class="figure">
+<p><img src="../img/microbit.jpg" alt="microbit.jpg" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline4">
+<h2 id="orgheadline4">What is it?</h2>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Wuza5WXiMkc" frameborder="0" allowfullscreen></iframe>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5">Words to look up</h2>
+<ul>
+<li>Emulator</li>
+<li>Code</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline6">
+<h2 id="orgheadline6">Getting Started</h2>
+<ul>
+<li>Your teacher will show you how to plug the battery pack into the micro:bit</li>
+<li>Please treat it with care and return it in it's anti-static bag after the lesson</li>
+<li>You'll go through a demo of it's hardware features, including a short snake-type game.</li>
+
+</ul>
+<p>
+-Next week, we'll connect them to the computers!
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
+<h2 id="orgheadline7">Let's write some code</h2>
+<ul>
+<li>Go to <a href="http://www.microbit.co.uk/">http://www.microbit.co.uk/</a></li>
+<li>Click 'Create' and then 'New Project' under the Block Code Editor</li>
+<li>Click 'basic' and drag in a 'show leds' component</li>
+<li>Hit 'convert' (the light bulb) and watch the show.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline8">
+<h2 id="orgheadline8">Show me!</h2>
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/KSICvQ_WMvA&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/KSICvQ_WMvA&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
