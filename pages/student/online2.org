@@ -1,0 +1,104 @@
+#+STYLE: ../../theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+AUTHOR:
+#+EMAIL:
+#+TITLE: Coding Online Part 2
+* Objectives
+- We are learning
+To develop (F) code for a new page.
+- You will be able to
+Start a new page from nothing, and link it to another page
+* Your starter:
+Go to:
+http://logicking.com
+and click 'games'
+
+#+BEGIN_QUOTE
+They are all created with html5 and css - the languages we are learning!
+#+END_QUOTE
+
+* In this lesson
+- You'll create a site from nothing;
+- You'll add links to your site;
+- You'll save your site as a .html file.
+* Keywords Today
+- style
+- css
+- tag
+* First steps
+- Go to http://scratchpad.io
+- Delete everything in the left hand pane.
+- Enter a heading between two heading tags: 
+
+#+BEGIN_QUOTE
+<h1> </h1>
+#+END_QUOTE
+
+* You've got style...
+- Let's change what your heading looks like
+- We're going to change it's colour, and put it in the center of the screen.
+- First, enter the <style> tag to show that we're writing some css.
+- Then, we're going to tell it what we want to do:
+* Like this:
+#+BEGIN_SRC html
+<style> 
+h1 { 
+text-align: center;
+color: red;
+}
+</style>
+<h1>Message of World-Bending Importance</h1>
+#+END_SRC 
+* Well done!
+- You've just written your first page from nothing!
+* Let's add a link:
+- Links in html use the <a href> tag
+#+BEGIN_SRC html
+<a href="www.verygoodsite.com">Brilliant Site</a>
+#+END_SRC
+* And a picture
+- Pictures use the <img> tag:
+
+#+BEGIN_SRC html
+<img src="../amazingwombatpicture.png" alt="Picture of a Wombat">
+#+END_SRC
+- Notice the 'alt' description, which keeps our site accessible for blind people with screen readers.
+* Put it all together
+
+#+BEGIN_SRC html
+<style> 
+h1 { 
+text-align: center;
+color: red;
+}
+</style>
+<h1>Message of World-Bending Importance</h1>
+<a href="www.verygoodsite.com">Brilliant Site</a>
+<img src="../amazingwombatpicture.png" alt="Picture of a Wombat">
+#+END_SRC
+* I'm on a desert island...
+and I only have WordPad.
+
+#+BEGIN_QUOTE
+Help!!
+#+END_QUOTE
+
+* You can edit your code in WordPad
+- But you MUST:
+
+#+BEGIN_QUOTE
+File > Save As > Text Document
+with a .html extension
+#+END_QUOTE
+* Show Me!
+#+REVEAL_HTML: <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/9afL0wl93n0&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/9afL0wl93n0&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+[[http://www.youtube.com/watch?v=9afL0wl93n0]]
+* Guide Me!
+** First, enter your html in wordpad
+[[../../img/wordpadhtmldoc.png]]
+** Then, save as a plain text file
+[[../../img/plaintextdoc.PNG]]
+** When you get to the save dialogue
+- add '.html' to the end of the file name
+[[../../img/saveashtml.PNG]]

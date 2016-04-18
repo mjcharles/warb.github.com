@@ -1,20 +1,22 @@
 #+SETUPFILE: ./theme-readtheorg.setup
-#+AUTHOR: M Charles / C Knight / A Pritchard
-* Welcome to Computer Science at Warblington
-** Year 7
-*** Micro-bit
-*** Week 1
-**** Lesson Presentation 
-[[./pages/year-7-1.html][Year 7 Lesson 1 Presentation]]
-**** Lesson Worksheet
-[[./7l1.html][Year 7 Lesson 1 Worksheet]]
-**** Resources
-
-
-
-** Year 8
-** Downloads
-** Year 8
-** Year 9
-*** Resources
-[[https://www.newscientist.com/article/visual-turing-test/][The Turing Test]]
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+AUTHOR:
+#+TITLE: Warblington Computing
+#+Email:
+* Microbit Lesson 1
+** Student
+[[./pages/student/microbit1.html]]
+** Teacher
+[[./pages/teacher/microbit1.html]]
+* Coding Online Lesson 1
+** Student
+[[./pages/student/online1.html]]
+** Teacher
+[[./pages/teacher/online1.html]]
+* Coding Online Lesson 2
+** Student
+With additional WordPad guide...
+[[./pages/student/online2.html]]
+** Teacher
+[[./pages/teacher/online2.html]]

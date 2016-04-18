@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Coding Online Part 2</title>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>Coding Online Part 2</h1>
+<h2></h2>
+<h2><a href="mailto:"></a></h2>
+<h2></h2>
+</section>
+<section>
+<section id="slide-orgheadline1">
+<h2 id="orgheadline1">Objectives</h2>
+<ul>
+<li>We are learning</li>
+
+</ul>
+<p>
+To develop (F) code for a new page.
+</p>
+<ul>
+<li>You will be able to</li>
+
+</ul>
+<p>
+Start a new page from nothing, and link it to another page
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline2">
+<h2 id="orgheadline2">Your starter:</h2>
+<p>
+Go to:
+<a href="http://logicking.com/">http://logicking.com/</a>
+and click 'games'
+</p>
+
+<blockquote nil>
+<p>
+They are all created with html5 and css - the languages we are learning!
+</p>
+</blockquote>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline3">
+<h2 id="orgheadline3">In this lesson</h2>
+<ul>
+<li>You'll create a site from nothing;</li>
+<li>You'll add links to your site;</li>
+<li>You'll save your site as a .html file.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline4">
+<h2 id="orgheadline4">Keywords Today</h2>
+<ul>
+<li>style</li>
+<li>css</li>
+<li>tag</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5">First steps</h2>
+<ul>
+<li>Go to <a href="http://scratchpad.io/">http://scratchpad.io/</a></li>
+<li>Delete everything in the left hand pane.</li>
+<li>Enter a heading between two heading tags:</li>
+
+</ul>
+
+<blockquote nil>
+<p>
+&lt;h1&gt; &lt;/h1&gt;
+</p>
+</blockquote>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline6">
+<h2 id="orgheadline6">You've got style&#x2026;</h2>
+<ul>
+<li>Let's change what your heading looks like</li>
+<li>We're going to change it's colour, and put it in the center of the screen.</li>
+<li>First, enter the &lt;style&gt; tag to show that we're writing some css.</li>
+<li>Then, we're going to tell it what we want to do:</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
+<h2 id="orgheadline7">Like this:</h2>
+<div class="org-src-container">
+
+<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt; 
+h1 { 
+text-align: center;
+color: red;
+}
+&lt;/<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt;
+&lt;<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Message of World-Bending Importance</span>&lt;/<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline8">
+<h2 id="orgheadline8">Well done!</h2>
+<ul>
+<li>You've just written your first page from nothing!</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline9">
+<h2 id="orgheadline9">Let's add a link:</h2>
+<ul>
+<li>Links in html use the &lt;a href&gt; tag</li>
+
+</ul>
+<div class="org-src-container">
+
+<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">a</span> <span style="color: #7590db;">href</span>=<span style="color: #2d9574;">"www.verygoodsite.com"</span>&gt;Brilliant Site&lt;/<span style="color: #bc6ec5; font-weight: bold;">a</span>&gt;
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline10">
+<h2 id="orgheadline10">And a picture</h2>
+<ul>
+<li>Pictures use the &lt;img&gt; tag:</li>
+
+</ul>
+
+<div class="org-src-container">
+
+<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">img</span> <span style="color: #7590db;">src</span>=<span style="color: #2d9574;">"../amazingwombatpicture.png"</span> <span style="color: #7590db;">alt</span>=<span style="color: #2d9574;">"Picture of a Wombat"</span>&gt;
+</pre>
+</div>
+<ul>
+<li>Notice the 'alt' description, which keeps our site accessible for blind people with screen readers.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline11">
+<h2 id="orgheadline11">Put it all together</h2>
+<div class="org-src-container">
+
+<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt; 
+h1 { 
+text-align: center;
+color: red;
+}
+&lt;/<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt;
+&lt;<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Message of World-Bending Importance</span>&lt;/<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;
+&lt;<span style="color: #bc6ec5; font-weight: bold;">a</span> <span style="color: #7590db;">href</span>=<span style="color: #2d9574;">"www.verygoodsite.com"</span>&gt;Brilliant Site&lt;/<span style="color: #bc6ec5; font-weight: bold;">a</span>&gt;
+&lt;<span style="color: #bc6ec5; font-weight: bold;">img</span> <span style="color: #7590db;">src</span>=<span style="color: #2d9574;">"../amazingwombatpicture.png"</span> <span style="color: #7590db;">alt</span>=<span style="color: #2d9574;">"Picture of a Wombat"</span>&gt;
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline12">
+<h2 id="orgheadline12">I'm on a desert island&#x2026;</h2>
+<p>
+and I only have WordPad.
+</p>
+
+<blockquote nil>
+<p>
+Help!!
+</p>
+</blockquote>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline13">
+<h2 id="orgheadline13">You can edit your code in WordPad</h2>
+<ul>
+<li>But you MUST:</li>
+
+</ul>
+
+<blockquote nil>
+<p>
+File &gt; Save As &gt; Text Document
+with a .html extension
+</p>
+</blockquote>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline14">
+<h2 id="orgheadline14">Show Me!</h2>
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/9afL0wl93n0&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/9afL0wl93n0&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+<p>
+<a href="http://www.youtube.com/watch?v=9afL0wl93n0">http://www.youtube.com/watch?v=9afL0wl93n0</a>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
