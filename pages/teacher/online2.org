@@ -25,8 +25,8 @@ They are all created with html5 and css - the languages we are learning!
 - style
 - css
 - tag
-* First steps
-- Go to http://scratchpad.io
+* TODO First steps
+- Go to http://codepen.io 
 - Delete everything in the left hand pane.
 - Enter a heading between two heading tags: 
 
@@ -36,23 +36,21 @@ They are all created with html5 and css - the languages we are learning!
 
 * You've got style...
 - Let's change what your heading looks like
+- In the middle pane
 - We're going to change it's colour, and put it in the center of the screen.
-- First, enter the <style> tag to show that we're writing some css.
 - Then, we're going to tell it what we want to do:
 * Like this:
-#+BEGIN_SRC html
-<style> 
+#+BEGIN_SRC css 
 h1 { 
 text-align: center;
 color: red;
 }
-</style>
-<h1>Message of World-Bending Importance</h1>
 #+END_SRC 
 * Well done!
 - You've just written your first page from nothing!
 * Let's add a link:
 - Links in html use the <a href> tag
+- In the left hand pane:
 #+BEGIN_SRC html
 <a href="www.verygoodsite.com">Brilliant Site</a>
 #+END_SRC
@@ -65,13 +63,13 @@ color: red;
 - Notice the 'alt' description, which keeps our site accessible for blind people with screen readers.
 * Put it all together
 
-#+BEGIN_SRC html
-<style> 
+#+BEGIN_SRC css 
 h1 { 
 text-align: center;
 color: red;
 }
-</style>
+#+END_SRC
+#+BEGIN_SRC html
 <h1>Message of World-Bending Importance</h1>
 <a href="www.verygoodsite.com">Brilliant Site</a>
 <img src="../amazingwombatpicture.png" alt="Picture of a Wombat">

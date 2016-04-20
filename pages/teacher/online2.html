@@ -89,9 +89,9 @@ They are all created with html5 and css - the languages we are learning!
 </section>
 <section>
 <section id="slide-orgheadline5">
-<h2 id="orgheadline5">First steps</h2>
+<h2 id="orgheadline5"><span class="todo TODO">TODO</span> First steps</h2>
 <ul>
-<li>Go to <a href="http://scratchpad.io/">http://scratchpad.io/</a></li>
+<li>Go to <a href="http://codepen.io/">http://codepen.io/</a></li>
 <li>Delete everything in the left hand pane.</li>
 <li>Enter a heading between two heading tags:</li>
 
@@ -110,8 +110,8 @@ They are all created with html5 and css - the languages we are learning!
 <h2 id="orgheadline6">You've got style&#x2026;</h2>
 <ul>
 <li>Let's change what your heading looks like</li>
+<li>In the middle pane</li>
 <li>We're going to change it's colour, and put it in the center of the screen.</li>
-<li>First, enter the &lt;style&gt; tag to show that we're writing some css.</li>
 <li>Then, we're going to tell it what we want to do:</li>
 
 </ul>
@@ -122,13 +122,10 @@ They are all created with html5 and css - the languages we are learning!
 <h2 id="orgheadline7">Like this:</h2>
 <div class="org-src-container">
 
-<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt; 
-h1 { 
-text-align: center;
-color: red;
+<pre  class="src src-css"><span style="color: #bc6ec5; font-weight: bold;">h1 </span>{ 
+<span style="color: #7590db;">text-align</span>: center;
+<span style="color: #7590db;">color</span>: red;
 }
-&lt;/<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt;
-&lt;<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Message of World-Bending Importance</span>&lt;/<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;
 </pre>
 </div>
 </section>
@@ -147,6 +144,7 @@ color: red;
 <h2 id="orgheadline9">Let's add a link:</h2>
 <ul>
 <li>Links in html use the &lt;a href&gt; tag</li>
+<li>In the left hand pane:</li>
 
 </ul>
 <div class="org-src-container">
@@ -180,13 +178,15 @@ color: red;
 <h2 id="orgheadline11">Put it all together</h2>
 <div class="org-src-container">
 
-<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt; 
-h1 { 
-text-align: center;
-color: red;
+<pre  class="src src-css"><span style="color: #bc6ec5; font-weight: bold;">h1 </span>{ 
+<span style="color: #7590db;">text-align</span>: center;
+<span style="color: #7590db;">color</span>: red;
 }
-&lt;/<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt;
-&lt;<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Message of World-Bending Importance</span>&lt;/<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;
+</pre>
+</div>
+<div class="org-src-container">
+
+<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Message of World-Bending Importance</span>&lt;/<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;
 &lt;<span style="color: #bc6ec5; font-weight: bold;">a</span> <span style="color: #7590db;">href</span>=<span style="color: #2d9574;">"www.verygoodsite.com"</span>&gt;Brilliant Site&lt;/<span style="color: #bc6ec5; font-weight: bold;">a</span>&gt;
 &lt;<span style="color: #bc6ec5; font-weight: bold;">img</span> <span style="color: #7590db;">src</span>=<span style="color: #2d9574;">"../amazingwombatpicture.png"</span> <span style="color: #7590db;">alt</span>=<span style="color: #2d9574;">"Picture of a Wombat"</span>&gt;
 </pre>
