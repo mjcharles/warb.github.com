@@ -4,6 +4,9 @@
 #+AUTHOR:
 #+TITLE: Warblington Computing
 #+Email:
+* Quick Code
+A collection of quick ways to do things:
+[[./pages/student/htmlcsslibrary.html]]
 * Microbit Lesson 1
 ** Student
 [[./pages/student/microbit1.html]]
