@@ -1,290 +1,183 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!-- 2016-04-18 Mon 17:02 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
 <title>Coding Online Part 2</title>
-<meta  name="generator" content="Org-mode" />
 <style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
+.underline { text-decoration: underline; }
 </style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Coding Online Part 2</h1>
-<div id="outline-container-orgheadline1" class="outline-2">
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>Coding Online Part 2</h1>
+<h2></h2>
+<h2><a href="mailto:"></a></h2>
+<h2></h2>
+</section>
+<section>
+<section id="slide-orgheadline1">
 <h2 id="orgheadline1">Objectives</h2>
-<div class="outline-text-2" id="text-orgheadline1">
-<ul class="org-ul">
+<ul>
 <li>We are learning</li>
+
 </ul>
 <p>
 To develop (F) code for a new page.
 </p>
-<ul class="org-ul">
+<ul>
 <li>You will be able to</li>
+
 </ul>
 <p>
 Start a new page from nothing, and link it to another page
 </p>
-</div>
-</div>
-<div id="outline-container-orgheadline2" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline2">
 <h2 id="orgheadline2">Your starter:</h2>
-<div class="outline-text-2" id="text-orgheadline2">
 <p>
 Go to:
 <a href="http://logicking.com/">http://logicking.com/</a>
 and click 'games'
 </p>
 
-<blockquote>
+<blockquote nil>
 <p>
 They are all created with html5 and css - the languages we are learning!
 </p>
 </blockquote>
-</div>
-</div>
 
-<div id="outline-container-orgheadline3" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline3">
 <h2 id="orgheadline3">In this lesson</h2>
-<div class="outline-text-2" id="text-orgheadline3">
-<ul class="org-ul">
+<ul>
 <li>You'll create a site from nothing;</li>
 <li>You'll add links to your site;</li>
 <li>You'll save your site as a .html file.</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline4" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline4">
 <h2 id="orgheadline4">Keywords Today</h2>
-<div class="outline-text-2" id="text-orgheadline4">
-<ul class="org-ul">
+<ul>
 <li>style</li>
 <li>css</li>
 <li>tag</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline5" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
 <h2 id="orgheadline5">First steps</h2>
-<div class="outline-text-2" id="text-orgheadline5">
-<ul class="org-ul">
-<li>Go to <a href="http://scratchpad.io/">http://scratchpad.io/</a></li>
-<li>Delete everything in the left hand pane.</li>
-<li>Enter a heading between two heading tags:</li>
+<ul>
+<li>Go to <a href="http://codepen.io/">http://codepen.io/</a></li>
+<li>Click 'add a new pen'</li>
+<li>Enter a heading in the top left pane between two heading tags:</li>
+
 </ul>
 
-<blockquote>
+<blockquote nil>
 <p>
 &lt;h1&gt; &lt;/h1&gt;
 </p>
 </blockquote>
-</div>
-</div>
 
-<div id="outline-container-orgheadline6" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline6">
 <h2 id="orgheadline6">You've got style&#x2026;</h2>
-<div class="outline-text-2" id="text-orgheadline6">
-<ul class="org-ul">
-<li>Let's change what your heading looks like</li>
-<li>We're going to change it's colour, and put it in the center of the screen.</li>
-<li>First, enter the &lt;style&gt; tag to show that we're writing some css.</li>
-<li>Then, we're going to tell it what we want to do:</li>
+<ul>
+<li>We're going to add some css in the middle pane.</li>
+<li>Put a picture in the background (remember, copy the url from 'View Image' in Google images.</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline7" class="outline-2">
-<h2 id="orgheadline7">Like this:</h2>
-<div class="outline-text-2" id="text-orgheadline7">
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt; 
-h1 { 
-text-align: center;
-color: red;
-}
-&lt;/<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt;
-&lt;<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">Message of World-Bending Importance</span>&lt;/<span style="color: #bc6ec5; font-weight: bold;">h1</span>&gt;
+<pre  class="src src-css"><span style="color: #bc6ec5; font-weight: bold;">body </span>{ <span style="color: #7590db;">background</span>: url(http://myimagesite.com/image.jpg); }
 </pre>
 </div>
-</div>
-</div>
-<div id="outline-container-orgheadline8" class="outline-2">
-<h2 id="orgheadline8">Well done!</h2>
-<div class="outline-text-2" id="text-orgheadline8">
-<ul class="org-ul">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
+<h2 id="orgheadline7">Well done!</h2>
+<ul>
 <li>You've just written your first page from nothing!</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline9" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline8">
+<h2 id="orgheadline8">How can I?</h2>
+<ul>
+<li>Go to <a href="http://warb.kaark.net/">http://warb.kaark.net/</a> and click the first link 'Quick Code'</li>
+<li>You'll find quick bits of html and css to construct your site.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline9">
 <h2 id="orgheadline9">Let's add a link:</h2>
-<div class="outline-text-2" id="text-orgheadline9">
-<ul class="org-ul">
+<ul>
 <li>Links in html use the &lt;a href&gt; tag</li>
+
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">a</span> <span style="color: #7590db;">href</span>=<span style="color: #2d9574;">"www.verygoodsite.com"</span>&gt;Brilliant Site&lt;/<span style="color: #bc6ec5; font-weight: bold;">a</span>&gt;
+<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">a</span> <span style="color: #7590db;">href</span>=<span style="color: #2d9574;">"www.verygoodsite.com"</span>&gt;Brilliant Site&lt;/<span style="color: #bc6ec5; font-weight: bold;">a</span>&gt;
 </pre>
 </div>
-</div>
-</div>
-<div id="outline-container-orgheadline10" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline10">
 <h2 id="orgheadline10">And a picture</h2>
-<div class="outline-text-2" id="text-orgheadline10">
-<ul class="org-ul">
+<ul>
 <li>Pictures use the &lt;img&gt; tag:</li>
+
 </ul>
 
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">img</span> <span style="color: #7590db;">src</span>=<span style="color: #2d9574;">"../amazingwombatpicture.png"</span> <span style="color: #7590db;">alt</span>=<span style="color: #2d9574;">"Picture of a Wombat"</span>&gt;
+<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">img</span> <span style="color: #7590db;">src</span>=<span style="color: #2d9574;">"../amazingwombatpicture.png"</span> <span style="color: #7590db;">alt</span>=<span style="color: #2d9574;">"Picture of a Wombat"</span>&gt;
 </pre>
 </div>
-<ul class="org-ul">
+<ul>
 <li>Notice the 'alt' description, which keeps our site accessible for blind people with screen readers.</li>
+
 </ul>
-</div>
-</div>
-<div id="outline-container-orgheadline11" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline11">
 <h2 id="orgheadline11">Put it all together</h2>
-<div class="outline-text-2" id="text-orgheadline11">
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt; 
+<pre  class="src src-html">&lt;<span style="color: #bc6ec5; font-weight: bold;">style</span>&gt; 
 h1 { 
 text-align: center;
 color: red;
@@ -295,87 +188,118 @@ color: red;
 &lt;<span style="color: #bc6ec5; font-weight: bold;">img</span> <span style="color: #7590db;">src</span>=<span style="color: #2d9574;">"../amazingwombatpicture.png"</span> <span style="color: #7590db;">alt</span>=<span style="color: #2d9574;">"Picture of a Wombat"</span>&gt;
 </pre>
 </div>
-</div>
-</div>
-<div id="outline-container-orgheadline12" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline12">
 <h2 id="orgheadline12">I'm on a desert island&#x2026;</h2>
-<div class="outline-text-2" id="text-orgheadline12">
 <p>
 and I only have WordPad.
 </p>
 
-<blockquote>
+<blockquote nil>
 <p>
 Help!!
 </p>
 </blockquote>
-</div>
-</div>
 
-<div id="outline-container-orgheadline13" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline13">
 <h2 id="orgheadline13">You can edit your code in WordPad</h2>
-<div class="outline-text-2" id="text-orgheadline13">
-<ul class="org-ul">
+<ul>
 <li>But you MUST:</li>
+
 </ul>
 
-<blockquote>
+<blockquote nil>
 <p>
 File &gt; Save As &gt; Text Document
 with a .html extension
 </p>
 </blockquote>
-</div>
-</div>
-<div id="outline-container-orgheadline14" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline14">
 <h2 id="orgheadline14">Show Me!</h2>
-<div class="outline-text-2" id="text-orgheadline14">
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/9afL0wl93n0&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/9afL0wl93n0&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
 <p>
 <a href="http://www.youtube.com/watch?v=9afL0wl93n0">http://www.youtube.com/watch?v=9afL0wl93n0</a>
 </p>
-</div>
-</div>
-<div id="outline-container-orgheadline18" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-orgheadline18">
 <h2 id="orgheadline18">Guide Me!</h2>
 <div class="outline-text-2" id="text-orgheadline18">
-</div><div id="outline-container-orgheadline15" class="outline-3">
+</div></section>
+<section id="slide-orgheadline15">
 <h3 id="orgheadline15">First, enter your html in wordpad</h3>
-<div class="outline-text-3" id="text-orgheadline15">
 
 <div class="figure">
 <p><img src="../../img/wordpadhtmldoc.png" alt="wordpadhtmldoc.png" />
 </p>
 </div>
-</div>
-</div>
-<div id="outline-container-orgheadline16" class="outline-3">
+</section>
+<section id="slide-orgheadline16">
 <h3 id="orgheadline16">Then, save as a plain text file</h3>
-<div class="outline-text-3" id="text-orgheadline16">
 
 <div class="figure">
 <p><img src="../../img/plaintextdoc.PNG" alt="plaintextdoc.PNG" />
 </p>
 </div>
-</div>
-</div>
-<div id="outline-container-orgheadline17" class="outline-3">
+</section>
+<section id="slide-orgheadline17">
 <h3 id="orgheadline17">When you get to the save dialogue</h3>
-<div class="outline-text-3" id="text-orgheadline17">
-<ul class="org-ul">
+<ul>
 <li>add '.html' to the end of the file name</li>
+
 </ul>
 
 <div class="figure">
 <p><img src="../../img/saveashtml.PNG" alt="saveashtml.PNG" />
 </p>
 </div>
+</section>
+</section>
 </div>
 </div>
-</div>
-</div>
-<div id="postamble" class="status">
-<p class="date">Created: 2016-04-18 Mon 17:02</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
-</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
 </body>
 </html>

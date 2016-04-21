@@ -1,5 +1,6 @@
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
+#+REVEAL_THEME: solarized
 #+AUTHOR:
 #+EMAIL:
 #+TITLE: Coding Online Part 2

@@ -27,31 +27,25 @@ They are all created with html5 and css - the languages we are learning!
 - css
 - tag
 * First steps
-- Go to http://scratchpad.io
-- Delete everything in the left hand pane.
-- Enter a heading between two heading tags: 
+- Go to http://codepen.io
+- Click 'add a new pen'
+- Enter a heading in the top left pane between two heading tags: 
 
 #+BEGIN_QUOTE
 <h1> </h1>
 #+END_QUOTE
 
 * You've got style...
-- Let's change what your heading looks like
-- We're going to change it's colour, and put it in the center of the screen.
-- First, enter the <style> tag to show that we're writing some css.
-- Then, we're going to tell it what we want to do:
-* Like this:
-#+BEGIN_SRC html
-<style> 
-h1 { 
-text-align: center;
-color: red;
-}
-</style>
-<h1>Message of World-Bending Importance</h1>
-#+END_SRC 
+- We're going to add some css in the middle pane.
+- Put a picture in the background (remember, copy the url from 'View Image' in Google images.
+#+BEGIN_SRC css
+body { background: url(http://myimagesite.com/image.jpg); }
+#+END_SRC
 * Well done!
 - You've just written your first page from nothing!
+* How can I?
+- Go to http://warb.kaark.net and click the first link 'Quick Code'
+- You'll find quick bits of html and css to construct your site.
 * Let's add a link:
 - Links in html use the <a href> tag
 #+BEGIN_SRC html
