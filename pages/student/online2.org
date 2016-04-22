@@ -1,4 +1,4 @@
-#+STYLE: ../../theme-readtheorg.setup
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-light.min.css" />
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
 #+AUTHOR:
@@ -37,6 +37,7 @@ They are all created with html5 and css - the languages we are learning!
 
 * You've got style...
 - We're going to add some css in the middle pane.
+[[../img/codepencss.png]]
 - Put a picture in the background (remember, copy the url from 'View Image' in Google images.
 #+BEGIN_SRC css
 body { background: url(http://myimagesite.com/image.jpg); }
@@ -59,14 +60,16 @@ body { background: url(http://myimagesite.com/image.jpg); }
 #+END_SRC
 - Notice the 'alt' description, which keeps our site accessible for blind people with screen readers.
 * Put it all together
+** HTML:
 
-#+BEGIN_SRC html
-<style> 
+#+BEGIN_SRC css 
 h1 { 
 text-align: center;
 color: red;
 }
-</style>
+#+END_SRC
+** CSS: 
+#+BEGIN_SRC html
 <h1>Message of World-Bending Importance</h1>
 <a href="www.verygoodsite.com">Brilliant Site</a>
 <img src="../amazingwombatpicture.png" alt="Picture of a Wombat">

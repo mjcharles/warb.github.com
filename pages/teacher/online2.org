@@ -26,7 +26,7 @@ They are all created with html5 and css - the languages we are learning!
 - style
 - css
 - tag
-* TODO First steps
+* First steps
 - Go to http://codepen.io 
 - Delete everything in the left hand pane.
 - Enter a heading between two heading tags: 
@@ -73,7 +73,7 @@ color: red;
 #+BEGIN_SRC html
 <h1>Message of World-Bending Importance</h1>
 <a href="www.verygoodsite.com">Brilliant Site</a>
-<img src="../amazingwombatpicture.png" alt="Picture of a Wombat">
+<img src="http://imagesite.com/amazingwombatpicture.png" alt="Picture of a Wombat">
 #+END_SRC
 * I'm on a desert island...
 and I only have WordPad.
